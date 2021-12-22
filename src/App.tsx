@@ -3,8 +3,8 @@ import styles from "./App.module.css";
 import { useSelector, useDispatch } from "react-redux";
 import { selectUser, login, logout } from "./features/userSlice";
 import { auth } from './firebase';
-import Auth from './features/components/Auth';
-import Feed from './features/components/Feed';
+import Auth from './components/Auth';
+import Feed from './components/Feed';
 
 const App: React.FC = () => {
   console.log(process.env.REACT_APP_FIREBASE_APIKEY)
